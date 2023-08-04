@@ -17,10 +17,37 @@ public class CreateOrderCommand {
     private final UUID orderId;
     @NotNull
     private final UUID restaurantId;
+
+    @NotNull
+    private final UUID customerId;
     @NotNull
     private final BigDecimal price;
     @NotNull
     private final List<OrderItem> items;
     @NotNull
     private final OrderAddress address;
+
+    public UUID getOrderId() {
+        return orderId;
+    }
+
+    public UUID getRestaurantId() {
+        return restaurantId;
+    }
+
+    public UUID getCustomerId() {
+        return customerId;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public List<OrderItem> getItems() {
+        return items;
+    }
+
+    public OrderAddress getAddress() {
+        return address;
+    }
 }
