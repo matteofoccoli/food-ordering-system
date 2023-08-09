@@ -30,7 +30,9 @@ public class OrderCreateCommandHandler {
     public CreateOrderResponse createOrder(CreateOrderCommand command) {
         OrderCreatedEvent event = orderCreateHelper.persistOrder(command);
         publisher.publish(event);
-        return orderDataMapper.orderToCreateOrderResponse(event.getOrder());
+        return orderDataMapper.orderToCreateOrderResponse(
+                event.getOrder(),
+                "Order successfully created");
     }
 
 }
