@@ -1084,3 +1084,4 @@ build/
 /infrastructure/docker-compose/volumes/zookeeper/transactions/version-2/log.2b3
 /infrastructure/docker-compose/volumes/zookeeper/transactions/version-2/log.2bb
 /infrastructure/docker-compose/volumes/zookeeper/transactions/version-2/log.15e
+/.java-version
